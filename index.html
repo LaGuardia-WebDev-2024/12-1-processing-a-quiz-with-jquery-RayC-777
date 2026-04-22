@@ -12,10 +12,10 @@
       <label>
         Who teaches Web Dev?<br />
         <select id="trivia-answer">
-          <option value="ethan">Ethan</option>
-          <option value="isaac">Isaac</option>
+          <option value="timothy">Timothy</option>
+          <option value="barty">Bartholemew II</option>
           <option value="hall">Ms. Hall</option>
-          <option value="pamela">pamela ❤</option>
+          <option value="me">me ❤</option>
         </select>
       </label>
       <br />
@@ -26,6 +26,21 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
 
+      $("#trivia-form").on("submit",function(event){
+       
+        event.preventDefault();
+
+          var $answer = $("#trivia-answer");
+          var answer = hall.val();
+          
+          if (YYYYY == 'hall') {
+          $('#result').text("DARN RIGHT SHE IS!!!!!);
+            }
+
+
+
+
+      });
 
 
     </script>
