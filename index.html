@@ -28,24 +28,20 @@
 
        $("#trivia-form").on("submit",function(event){
         event.preventDefault();
-      });
+     
 
           var $answer = $("#trivia-answer");
           var answer = $answer.val();
           console.log(answer);
 
-
-          var $answer = $("#trivia-answer");
-          var answer = answer.val();
-
           
-          if (answer == 'hall') {
+          if (answer === 'hall') {
             $('#result').text("DARN RIGHT SHE IS!!!! :)");
             }
           else {
             $('#result').text("Try again! :)");
           }
-
+ });
 
     </script>
   </body>
